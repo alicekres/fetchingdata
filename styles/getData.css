@@ -1,0 +1,71 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  margin: 50px auto 25px;
+  border-radius: 5px;
+  background-color: #379683;
+  width: 90%;
+  max-width: 20rem;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+
+form h1 {
+  font-size: 21px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 3px 0;
+}
+
+form input {
+  padding: 3px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #b1a296;
+  background-color: white;
+}
+
+.button {
+  margin: 10px auto 3px;
+  padding: 6px;
+  text-align: center;
+}
+
+form button {
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
